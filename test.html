@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test </title>
-  <style type="text/css">
-  	body {
-  		margin: 0;
-  		padding:0;
-  	}
-  	.container {
-  		position: relative;
-  		width: 600px;
-  		height: 600px;
-  		background: rgb(217, 217, 217);
-  		overflow: hidden;
-  	}
-  	.blue {
-  		background-color:rgb(28, 63, 155);
-  	}
-  	.purple {
-  		background-color:rgb(146, 15, 191);
-  		z-index: 20;
-  	}
-  	.red {
-  		background-color:rgb(206, 54, 7);
-  	}
-  	.green1 {
-  		background-color: rgb(36, 132, 86);
-  	}
-  	.green2 {
-  		z-index: 20;
-  		background-color:rgb(12, 165, 101);
-  	}
-  	.circle-big {
-  		width:650px;
-  		height: 650px;
-  		position: relative;
-  		top:-50%;
-  		left: -50%;
-  		border-radius: 50%;
-  		z-index: 2;
-  	}
-  	.triangle {
-  		width: 0;
-		height: 0;
-		border-bottom: 150px solid rgb(206, 54, 7); 
-		border-left: 150px solid transparent;
-  		position: absolute;
-  		right: 0;
-  		top:0;
-  	}
-  	.circle-small {
-  		position: absolute;
-  		border-radius: 50%;
-  		right: 115px;
-  		top: 200px;
-  		width: 150px;
-  		height: 150px;
-  	}
-  	.rect-big {
-  		position: absolute;
-  		bottom: 80px;
-  		left: 75px;
-  		height: 120px;
-  		width: 450px;
-  		border-radius: 40px;
-  	}
-  	.rect-small {
-  		position: absolute;
-  		top:250px;
-  		left:50px;
-  		height: 67px;
-  		width: 500px;
-  		transform: rotate(45deg);
-  		z-index: 10;
-  	}
-  </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test </title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			position: relative;
+			width: 600px;
+			height: 600px;
+			background: rgb(217, 217, 217);
+			overflow: hidden;
+		}
+
+		.blue {
+			background-color: rgb(28, 63, 155);
+		}
+
+		.purple {
+			background-color: rgb(146, 15, 191);
+			z-index: 20;
+		}
+
+		.red {
+			background-color: rgb(206, 54, 7);
+		}
+
+		.green1 {
+			background-color: rgb(36, 132, 86);
+		}
+
+		.green2 {
+			z-index: 20;
+			background-color: rgb(12, 165, 101);
+		}
+
+		.circle-big {
+			width: 650px;
+			height: 650px;
+			position: relative;
+			top: -50%;
+			left: -50%;
+			border-radius: 50%;
+			z-index: 2;
+		}
+
+		.triangle {
+			border-bottom: 160px solid rgb(206, 54, 7);
+			border-left: 150px solid transparent;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.circle-small {
+			position: absolute;
+			border-radius: 50%;
+			right: 115px;
+			top: 200px;
+			width: 150px;
+			height: 150px;
+		}
+
+		.rect-big {
+			position: absolute;
+			bottom: 80px;
+			left: 75px;
+			height: 120px;
+			width: 450px;
+			border-radius: 40px;
+		}
+
+		.rect-small {
+			position: absolute;
+			top: 250px;
+			left: 50px;
+			height: 67px;
+			width: 500px;
+			transform: rotate(45deg);
+			z-index: 10;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container">
 		<div class="circle-big green1"></div>
 		<div class="rect-small blue"></div>
-	    <div class="circle-small green2"></div>
-	    <div class="rect-big purple"></div>
-	    <div class="triangle"></div>
+		<div class="circle-small green2"></div>
+		<div class="rect-big purple"></div>
+		<div class="triangle"></div>
 	</div>
 </body>
+
 </html>
